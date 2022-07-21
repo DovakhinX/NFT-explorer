@@ -1,0 +1,11 @@
+<div className='nftCard'>
+        {   
+        nft.map((item,i)=>(
+            <div key={i} className='itemcard'>
+                <p>{item.metadata.name}</p>
+                <image src={item.metadata.image} className="img" alt='nft'/>
+                <p>{item.description}</p>
+                </div>
+
+        ))}
+        </div>

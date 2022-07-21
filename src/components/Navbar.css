@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #52acff;
+  background-image: linear-gradient(180deg, #52acff 25%, #ffe32c 100%);
+  height: 40px;
+
+  text-align: center;
+
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.navbar h2 {
+  display: inline;
+}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap");

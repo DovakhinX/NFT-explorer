@@ -1,0 +1,21 @@
+.nftCard{
+    display:flex;
+    flex-direction:row-reverse;
+    flex-wrap:wrap-reverse;
+    justify-content: space-around;
+    padding-top: 40px;
+    
+
+
+}
+
+.itemcard{
+    border: 1px solid #130101;
+  border-radius: 55px;
+    width: fit-content;
+    background-color: #52ACFF;
+background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+
+    
+
+}
