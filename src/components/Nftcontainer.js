@@ -2,11 +2,10 @@ import React from 'react';
 import  './Nftcontainer.css';
 
 function Nftcontainer({nftData,loadState}){
-    if(!nftData&&loadState===false){
-        return <h2>No NFT Exists</h2>
-    }
+  
     return (
         <>
+        {nftData?(
         <div className='nftCard'>
         {  
         nftData.map((item,i)=>(
@@ -18,7 +17,7 @@ function Nftcontainer({nftData,loadState}){
 
         ))}
       
-        </div>
+        </div>):<h2>NO NFT EXISTS</h2>}
         </>
     )
 }

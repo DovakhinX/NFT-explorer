@@ -14,24 +14,27 @@ function Home() {
 
   const getNFT = async () => {
     try {
-      setload(true);
+     setload(true);
       const options = {
         chain: "mumbai",
         address: add,
       };
       const NFT = await Moralis.Web3API.account.getNFTs(options);
 
-   if (NFT.result) {
+
+if (NFT.result) {
         const data = NFT.result.map((item) => {
           item.metadata = JSON.parse(item.metadata);
           return item;
         });
         setnft(data);
-        setload(false);
         console.log(data);
+        
       }
     } catch (error) {
       console.log(error);
+      
+      
       
     }
   };
@@ -42,11 +45,12 @@ function Home() {
      address={addChange}
      getdata={ getNFT}
      />
-     <Nftcontainer 
+
+     {load?<Nftcontainer 
      nftData={nft}
      loadState={load}
      
-     />
+     />:null}
     </>
   );
 }
